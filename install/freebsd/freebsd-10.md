@@ -265,6 +265,7 @@ Download the FreeBSD init script as root:
 
 ```
 wget -O /usr/local/etc/rc.d/gitlab https://gitlab.com/gitlab-org/gitlab-recipes/raw/master/init/init/freebsd/gitlab-unicorn
+chmod +x /usr/local/etc/rc.d/gitlab
 ```
 
 10. Check Configuration and Compile Assets
