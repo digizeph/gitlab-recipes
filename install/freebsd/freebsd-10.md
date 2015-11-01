@@ -159,7 +159,7 @@ sudo service redis restart
 cd /home/git
 
 # Clone GitLab source
-sudo -u git -H git clone https://gitlab.com/gitlab-org/gitlab-ce.git -b 7-7-stable gitlab
+sudo -u git -H git clone https://gitlab.com/gitlab-org/gitlab-ce.git -b 8-1-stable gitlab
 
 # Go to GitLab source folder
 cd /home/git/gitlab
@@ -227,7 +227,7 @@ sudo -u git -H bundle install --deployment --without development test mysql aws
 
 ```
 # Run the rake task for installing gitlab-shell
-sudo -u git -H bundle exec rake gitlab:shell:install[v2.4.1] REDIS_URL=unix:/usr/local/var/run/redis/redis.sock RAILS_ENV=production
+sudo -u git -H bundle exec rake gitlab:shell:install REDIS_URL=unix:/usr/local/var/run/redis/redis.sock RAILS_ENV=production
 
 # Edit the gitlab-shell config
 # Change the 'socket' option to '/usr/local/var/run/redis/redis.sock'
